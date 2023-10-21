@@ -31,20 +31,20 @@
       <!--Container for API number and fact input-->
     <div class="flex">
       <div class="hero-body">
-        <div class="box">
+        <div class="box infoBox has-text-white">
             Lets go skydiving!
         </div>
       </div>
 
       <!--Table holds facts created/saved by user-->
       <div class="table-container">
-        <table class="table is-hoverable">
+        <table class="table has-text-white is-narrow">
           <tr>
-            <th>#</th>
-            <th>Facts</th>
+            <th class="has-text-white">#</th>
+            <th class="has-text-white">Facts</th>
           </tr>
-          <tr id="storageInput">
-            <td>...</td>
+          <tr id="storageInput" class="storageInput">
+            <td>28</td>
             <td>...</td>
           </tr>
         </table>
@@ -53,7 +53,7 @@
     
     <div class="factInput">
       <input class="input is-rounded factInput" type="text" placeholder="Write a fact">
-      <button class="button is-rounded save">Save</button>
+      <button class="button is-rounded has-text-white save">Save</button>
     </div>
 
     <a id="currentDay" class="currentDate has-text-grey-light"></a>

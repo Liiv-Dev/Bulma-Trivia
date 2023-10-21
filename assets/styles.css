@@ -38,15 +38,22 @@ body {
 
 .box {
     height: 300px;
-    width: 70%;
+    width: 650px;
     margin-left: 20px;
     margin-top: 0;
     margin-bottom: 0;
+    background-color: var(--dark-color);
+    font-size: 30px;
+}
+
+.table-container {
+    margin-right: 150px;
+    border-radius: 10px;
 }
 
 .table {
-    margin-right: 150px;
-    border-radius: 10px;
+    overflow-wrap: break-word;
+    background-color: var(--dark-color);
 }
 
 .factInput {
@@ -59,6 +66,8 @@ body {
 .save {
     transform: translateY(-12%);
     margin-left: 35px;
+    background-color: var(--dark-color);
+    border: solid;
 }
 
 .currentDate {
