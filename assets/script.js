@@ -36,8 +36,6 @@ $(document).ready(function () {
 			});
 	}
 
-	
-
 	$("#date").on("click", function () {
 		var type = "date";
 		fetchDataAndDisplay(type);
@@ -53,17 +51,14 @@ $(document).ready(function () {
   });
 
   $(".save").on("click", function () {
-	const userFact = $("input").val();
+	var userInput = $("#userFact").val();
 
-	if(userFact === "") {
-		return;
+	if (userInput === "") {
+		return 
 	}
 
-	//Adds row to table containing input info
-	$("tbody").append("<tr><td>" + userFact + "</td></tr>");
+	$("tbody").append("<tr><td>" + userInput + "</td></tr>")
 
-	//resets input to placeholder preset
-	$("input").val("");
-  });
-
+	$("#userFact").val("")
+  })
 });

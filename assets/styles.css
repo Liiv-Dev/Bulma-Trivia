@@ -12,6 +12,11 @@ body {
     background-color: #121B22;
 }
 
+tbody {
+    inline-size: 150px;
+    word-break: break-all;
+}
+
 .brick{
     background-color: #B94A3E;
     border-radius: 5px;
@@ -44,19 +49,20 @@ body {
     margin-bottom: 0;
     background-color: var(--dark-color);
     font-size: 30px;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .table-container {
     height: 250px;
     width: 300px;
-    margin-right: 100px;
+    margin-right: 150px;
     overflow: scroll;
 }
 
 .table {
     background: rgba(0,0,0,0.5);
     border-radius: 10px;
-    overflow: scroll;
 }
 
 .factInput {
