@@ -52,13 +52,10 @@ $(document).ready(function () {
     var numberClass = $(`.info${number}`).attr("class");
   });
 
-  //Row variable for table count
-  const rowNumber = 0;
-
   $(".save").on("click", function () {
 	const userFact = $("input").val();
 
-	if(userFact === "" || rowNumber > 6) {
+	if(userFact === "") {
 		return;
 	}
 
@@ -67,12 +64,6 @@ $(document).ready(function () {
 
 	//resets input to placeholder preset
 	$("input").val("");
-
-	rowNumber++;
-
-	if (rowNumber > 6) {
-		$(".save").prop("disabled", true);
-	}
-  })
+  });
 
 });
