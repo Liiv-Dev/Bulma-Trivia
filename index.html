@@ -37,22 +37,20 @@
       </div>
 
       <!--Table holds facts created/saved by user-->
-      <div class="table-container">
-        <table class="table has-text-white is-narrow">
-          <tr>
-            <th class="has-text-white">#</th>
-            <th class="has-text-white">Facts</th>
-          </tr>
-          <tr id="storageInput" class="storageInput">
-            <td>28</td>
-            <td>...</td>
-          </tr>
+      <div class="table-container has-text-white">
+        <table class="table has-text-white">
+          <thead>
+            <tr><b>Facts</b></tr>
+          </thead>
+          <tbody>
+            <!--Save click function will generate table columns based on input imformation-->
+          </tbody>
         </table>
       </div>
     </div>
     
     <div class="factInput">
-      <input class="input is-rounded factInput" type="text" placeholder="Write a fact">
+      <input id="userFact" class="input is-rounded factInput" type="text" maxlength="100" placeholder="Write a fact">
       <button class="button is-rounded has-text-white save">Save</button>
     </div>
 

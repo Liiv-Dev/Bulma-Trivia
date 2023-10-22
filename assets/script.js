@@ -36,6 +36,8 @@ $(document).ready(function () {
 			});
 	}
 
+	
+
 	$("#date").on("click", function () {
 		var type = "date";
 		fetchDataAndDisplay(type);
@@ -49,4 +51,28 @@ $(document).ready(function () {
 	$(".submit").on("click", function () {
     var numberClass = $(`.info${number}`).attr("class");
   });
+
+  //Row variable for table count
+  const rowNumber = 0;
+
+  $(".save").on("click", function () {
+	const userFact = $("input").val();
+
+	if(userFact === "" || rowNumber > 6) {
+		return;
+	}
+
+	//Adds row to table containing input info
+	$("tbody").append("<tr><td>" + userFact + "</td></tr>");
+
+	//resets input to placeholder preset
+	$("input").val("");
+
+	rowNumber++;
+
+	if (rowNumber > 6) {
+		$(".save").prop("disabled", true);
+	}
+  })
+
 });

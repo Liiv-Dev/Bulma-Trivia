@@ -25,7 +25,7 @@ body {
 }
 
 .hero {
-        background-image: linear-gradient(to bottom right, var(--brick-color), var(--dark-color));
+        background-image: linear-gradient(to bottom right, var(--dark-color), var(--brick-color), var(--dark-color));
     border-radius: 30px;
     height: 80%;
 }
@@ -47,13 +47,13 @@ body {
 }
 
 .table-container {
-    margin-right: 150px;
+    width: 200px;
     border-radius: 10px;
+    margin-right: 15em;
 }
 
 .table {
-    overflow-wrap: break-word;
-    background-color: var(--dark-color);
+    background: rgba(0,0,0,0.5);
 }
 
 .factInput {
