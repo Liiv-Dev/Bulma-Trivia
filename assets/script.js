@@ -57,7 +57,7 @@ $(document).ready(function () {
 		return 
 	}
 
-	$("tbody").append("<tr><td>" + userInput + "</td></tr>")
+	$("tbody").append(`<tr><td> ${userInput} </td></tr>`)
 
 	$("#userFact").val("")
   })
